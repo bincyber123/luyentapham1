@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let star = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let manyStar = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    let input = prompt(" Nhập tên ngôi sao")
+    function  findStar() {
+        let result;
+        for (let i=0; i<star.length;i++){
+            if (input===star[i]){
+                result=manyStar[i];
+                return result;
+            }else {
+                result=("khong tim thay ngoi sao");
+                return result;
+            }
+        }
+    }
+alert(findStar());
+
+</script>
+
+</body>
+</html>
